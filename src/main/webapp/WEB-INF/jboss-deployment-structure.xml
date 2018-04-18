@@ -2,20 +2,7 @@
 <jboss-deployment-structure>
 	<deployment>
 		<dependencies>
-			<module name="asm.asm" />
-			<module name="org.apache.ws.security" />
-			<module name="org.apache.cxf" />
-			<module name="org.apache.cxf.impl" />
+			<module name="org.dom4j" />
 		</dependencies>
 	</deployment>
-
-	<sub-deployment name="BlueMobileInternalWS.war">
-		<dependencies>
-			<module name="asm.asm" />
-			<module name="org.apache.ws.security" />
-			<module name="org.apache.cxf" />
-			<module name="org.apache.cxf.impl" />
-		</dependencies>
-	</sub-deployment>
-
 </jboss-deployment-structure>
