@@ -477,8 +477,8 @@ public class TechForumServiceController {
 	@GET
 	@Path("/user/search/{dasId}")
 	public Response searchUserDetails(@PathParam("dasId") String dasId) {
-		String adminUser = "A506826";
-		String adminPass = "Aug@2017";
+		String adminUser = "A605590";
+		String adminPass = "Atos@123456";
 
 		Properties props = new Properties();
 		props.put(Context.INITIAL_CONTEXT_FACTORY,
