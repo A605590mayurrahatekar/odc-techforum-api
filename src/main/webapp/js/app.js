@@ -12,7 +12,7 @@ localStorage.removeItem("scheduleData-TR03");
 localStorage.removeItem("scheduleData-TR04");
 
 
-localStorage.setItem('SERVER_BASE_URL', 'http://odctechforum-fluidmobileapp.rhcloud.com/rest/tech/');
+localStorage.setItem('SERVER_BASE_URL', 'http://windfly-tech-techmishra.7e14.starter-us-west-2.openshiftapps.com/rest/tech/');
 //localStorage.removeItem("REG-SLOT" , "11:10 AM");
 
 var fb = new MobileApp();
@@ -62,7 +62,7 @@ fb.MobileRouter = Backbone.Router.extend({
     	console.log($(".largescreen").css('display'));
     	if(!localStorage.getItem("currentCacheVersion")) { // if cache does not exist then create it
     		localStorage.setItem("currentCacheVersion",currentCacheVersion);
-    		localStorage.setItem('SERVER_BASE_URL', 'http://odctechforum-fluidmobileapp.rhcloud.com/rest/tech/');
+    		localStorage.setItem('SERVER_BASE_URL', 'http://windfly-tech-techmishra.7e14.starter-us-west-2.openshiftapps.com/rest/tech/');
     	} else {
     		var oldCacheVersion = localStorage.getItem("currentCacheVersion");
     		if(oldCacheVersion != currentCacheVersion) {
