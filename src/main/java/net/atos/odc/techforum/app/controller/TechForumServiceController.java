@@ -286,7 +286,7 @@ public class TechForumServiceController {
 
 		return Response
 				.status(200)
-				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Origin", "http://localhost:8100")
 				.header("Access-Control-Allow-Headers",
 						"origin, content-type, accept, authorization,access_token")
 				.header("Access-Control-Allow-Credentials", "true")
