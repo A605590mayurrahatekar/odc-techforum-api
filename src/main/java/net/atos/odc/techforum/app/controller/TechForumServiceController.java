@@ -286,7 +286,7 @@ public class TechForumServiceController {
 
 		return Response
 				.status(200)
-				.header("Access-Control-Allow-Origin", "http://localhost:8100")
+				.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 				.header("Access-Control-Allow-Headers",
 						"origin, content-type, accept, authorization,access_token")
 				.header("Access-Control-Allow-Credentials", "true")
@@ -539,7 +539,7 @@ public class TechForumServiceController {
 		if (dto.getFirstName() != null) {
 			return Response
 					.status(200)
-					.header("Access-Control-Allow-Origin", "*")
+					.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 					.header("Access-Control-Allow-Headers",
 							"origin, content-type, accept, authorization,access_token")
 					.header("Access-Control-Allow-Credentials", "true")
@@ -557,7 +557,7 @@ public class TechForumServiceController {
 	public Response options() {
 		return Response
 				.ok("")
-				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 				.header("Access-Control-Allow-Headers",
 						"origin, content-type, accept, authorization , access_token")
 				.header("Access-Control-Allow-Credentials", "true")
@@ -575,7 +575,7 @@ public class TechForumServiceController {
 		if (!isUserAuthenticated(authString)) {
 			return Response
 					.status(200)
-					.header("Access-Control-Allow-Origin", "*")
+					.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 					.header("Access-Control-Allow-Headers",
 							"origin, content-type, accept, authorization,access_token")
 					.header("Access-Control-Allow-Credentials", "true")
@@ -588,7 +588,7 @@ public class TechForumServiceController {
 			String encUserID = new BASE64Encoder().encode(userId.getBytes());
 			return Response
 					.status(200)
-					.header("Access-Control-Allow-Origin", "*")
+					.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 					.header("Access-Control-Allow-Headers",
 							"origin, content-type, accept, authorization,access_token")
 					.header("Access-Control-Allow-Credentials", "true")
@@ -682,7 +682,7 @@ public class TechForumServiceController {
 	public Response optionsAll() {
 		return Response
 				.ok("")
-				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 				.header("Access-Control-Allow-Headers",
 						"origin, content-type, accept, authorization , access_token")
 				.header("Access-Control-Allow-Credentials", "true")
@@ -695,7 +695,7 @@ public class TechForumServiceController {
 	private Response buildResponse(Object dto) {
 		return Response
 				.status(200)
-				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Origin", "http://techforumweb-techforumweb.7e14.starter-us-west-2.openshiftapps.com")
 				.header("Access-Control-Allow-Headers",
 						"origin, content-type, accept, authorization,access_token")
 				.header("Access-Control-Allow-Credentials", "true")
